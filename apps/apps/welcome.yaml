@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: welcome
+  namespace: argocd
+spec:
+  destination:
+    namespace: welcome
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: apps/welcome
+    repoURL: https://github.com/nvpidstoob/ArgoCD
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false
+    syncOptions:
+    - CreateNamespace=true
+    - PruneLast=true
