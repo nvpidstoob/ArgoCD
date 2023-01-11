@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: apps/bdg
+    path: apps/bdg/
     repoURL: https://github.com/nvpidstoob/ArgoCD
     targetRevision: main
   syncPolicy:
