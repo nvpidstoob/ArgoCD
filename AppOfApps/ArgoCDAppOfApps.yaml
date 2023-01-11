@@ -12,7 +12,7 @@ spec:
     name: in-cluster
   project: default
   source:
-    path: apps
+    path: apps/apps
     repoURL: https://github.com/nvpidstoob/ArgoCD
     targetRevision: HEAD
 
