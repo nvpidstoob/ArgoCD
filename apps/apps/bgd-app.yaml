@@ -2,10 +2,10 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: bgd-app
-  namespace: bgd
+  namespace: argocd
 spec:
   destination:
-    namespace: argocd
+    namespace: bdg
     server: https://kubernetes.default.svc
   project: default
   source:
