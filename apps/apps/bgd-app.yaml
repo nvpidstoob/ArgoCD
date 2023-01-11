@@ -9,8 +9,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: apps/bgd/overlays/bgd
-    repoURL: https://github.com/redhat-developer-demos/openshift-gitops-examples
+    path: apps/apps/bdg-app
+    repoURL: https://github.com/nvpidstoob/ArgoCD
     targetRevision: main
   syncPolicy:
     automated:
